@@ -1,0 +1,7 @@
+<div id="loadingText" ng-hide="loaded">Loading&hellip;</div>
+<div ng-bind="errorMessage"></div>
+<section>
+  <ul id="hearResults">
+    <li ng-repeat="article in newsArticles"><A href="{{article.link}}">{{article.title}}</a></li>
+  </ul>
+</section>

@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Brandon James Fitzpatrick -- Creative Technologist -- @FizzPopClick
+
+# THANKS
+
+  Google, Inc.
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3

@@ -1,0 +1,169 @@
+@import "components/components";
+@import "starter-kit";
+
+
+//@import "app";
+
+/*
+  Extra small devices (phones, less than 768px)
+*/
+
+.logo {
+  background:url(../assets/images/logo.svg) no-repeat 0 0.5em;
+  text-indent: 1.25em;
+  background-size: 1em;
+
+  a {
+    font-weight: normal;
+  }
+}
+
+.navdrawer-container h4,
+.navdrawer-container ul li a,
+.navdrawer-container ul li i {
+  padding: 12px 10px;
+}
+
+.navdrawer-container ul li i {
+  display:block;
+  height: auto;
+  line-height: 1.4;
+  opacity:0.5;
+}
+
+.navdrawer-container ul li {
+  margin-left:-10px;
+}
+
+.navdrawer-container ul li a.addTab {
+  font-weight: bold;
+}
+
+ul li::before {
+  content:none;
+}
+
+main {
+  padding:1em 0;
+}
+
+.hide {
+  display:none;
+}
+
+footer {
+  background-color: #4285F4;
+  width:100%;
+  overflow: auto;
+  zoom: 1;
+  //margin-top:2em;
+
+  div {
+    display: block;
+    margin:auto;
+  }
+
+  a {
+    height:100%;
+    color:#fff;
+    color:rgba(255,255,255,0.7);
+    text-align: center;
+    text-decoration: none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    font-size:1.5em;
+
+    float: left;
+    margin-right: 3%;
+    width: 22%;
+    -webkit-transition:all 0.25s;
+
+    &:hover {
+      color:rgba(255,255,255,1);
+      background-color: rgba(255,255,255,0.1);
+    }
+  }
+}
+
+.sticky-footer-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .sticky-footer-push {
+  height: 80px; /* '.push' must be the same height as 'footer' */
+}
+
+
+#selectDestinationView {
+  padding:0;
+  
+  ul, li {
+    margin: 0;
+  }
+
+  li {
+    display:inline-block;
+    margin:0;
+
+    a {
+      font-size:0.8em;
+      display: block;
+      font-weight:bold;
+      text-decoration: none;
+    }
+  }
+}
+
+#hearResults {
+  &, li { 
+    padding:0;
+
+    a {
+      display:block;
+      padding:0.25em 0;
+    }
+  }
+}
+
+/* Small devices (tablets, 600px and up) */
+
+@media (min-width: $medium) {
+
+  .logo {
+    text-indent: 1.25em;
+    background-size: 1em;
+    float:right;
+  }
+
+  .sticky-footer-wrapper {
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+  }
+
+  footer, .sticky-footer-push {
+    height: 155px; /* '.push' must be the same height as 'footer' */
+  }
+
+  footer a  {
+    line-height:155px;
+    font-size:3em;
+  }
+}
+
+/*
+  Medium devices (desktops, 992px and up)
+*/
+
+@media (min-width: $wide) {
+  .logo {
+    text-indent: 2.5em;
+    background-size: 2em;
+  }
+
+  footer a  {
+    font-size:3em;
+  }
+}

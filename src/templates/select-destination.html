@@ -1,0 +1,11 @@
+<div id="selectDestinationView">
+  <h2>Select Destination</h2>
+  <h3>Choose from below</h3>
+  <ul class="container">
+    <li ng-repeat="destination in destinations" class="g--third">
+      <!--<a href="#hear/{{destination.id}}/{{destination.city_name}},{{destination.country_name}}">{{destination.city_name}}, {{destination.country_name}}</a>-->
+      <!--<a href="#hear/{{destination.id}}/{{destination.city_name}},{{destination.country_name}}" ng-click="addDestination">{{destination.city_name}}, {{destination.country_name}}</a>-->
+      <a href="#/select-destination" ng-click="addDestination(destination.id)">{{destination.city_name}}, {{destination.country_name}}</a>
+    </li>
+  </ul>
+</div>
